@@ -1,4 +1,5 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Poppins:wght@200;300;400;500;600&display=swap');
+body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,6 +7,7 @@
     text-decoration: none;
     line-height: 1.5;
     font-size: 16px;
+    font-family: 'Poppins' sans-serif;
 }
 :root{
     --bg-black-900: #f2f2fc;
@@ -14,3 +16,83 @@
     --text-black-900: #30234d;
     --text-black-700: #504e70;
 }
+.section{
+    background: var(--bg-black-900);
+    min-height: 100vh;
+    display: block;
+    position: fixed;
+    left: 260px;
+    top: 0;
+    right: 0;
+    opacity: 1;
+    z-index: 0;
+}
+
+/* Aside Start */
+.aside{
+    width: 260px;
+    background: var(--bg-black-100);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 5;
+    height: 100%;
+    padding: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid var(--bg-black-50);
+}
+.aside .logo{
+    position: absolute;
+    top: 50px;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.aside .logo a{
+    color: var(--text-black-900);
+    font-weight: 700;
+    padding: 15px 25px;
+    font-size: 20px;
+    letter-spacing: 5px;
+}
+.aside .logo a span{
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 40px;
+}
+
+.aside .nav-bar{
+    margin-top: 20px;
+}
+.aside .nav-bar li{
+    margin-bottom: 20px;
+    display: block;
+
+}
+.aside .nav-bar li a {
+    font-size: 16px;
+    font-weight: 600;
+    display: block;
+    color: var(--text-black-900);
+    border-bottom: 1px solid var(--bg-black-50);
+    padding: 5px 15px;
+
+}
+.aside .nav-bar li a.active{
+    color: var(--skin-color);
+}
+.aside .nav-bar li a i{
+    margin-right: 15px;
+}
+.aside .nav-bar-toggler{
+    height: 40px;
+    width: 45px;
+    border: 1px solid var(--bg-black-50);
+    cursor: pointer;
+    position: fixed;
+    left: 290px;
+    top: 20px;
+    border-radius: 5px;
+    background: var(--bg-black-100);
+}
+/* Aside End */
