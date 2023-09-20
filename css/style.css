@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Poppins:wght@200;300;400;500;600&display=swap');
-body{
+
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,14 +10,16 @@ body{
     font-size: 16px;
     font-family: 'Poppins' sans-serif;
 }
-:root{
+
+:root {
     --bg-black-900: #f2f2fc;
     --bg-black-100: #fdf9ff;
     --bg-black-50: #e8dfec;
     --text-black-900: #30234d;
     --text-black-700: #504e70;
 }
-.section{
+
+.section {
     background: var(--bg-black-900);
     min-height: 100vh;
     display: block;
@@ -29,7 +32,7 @@ body{
 }
 
 /* Aside Start */
-.aside{
+.aside {
     width: 260px;
     background: var(--bg-black-100);
     position: fixed;
@@ -43,32 +46,37 @@ body{
     align-items: center;
     border-right: 1px solid var(--bg-black-50);
 }
-.aside .logo{
+
+.aside .logo {
     position: absolute;
     top: 50px;
     font-size: 30px;
     text-transform: uppercase;
 }
-.aside .logo a{
+
+.aside .logo a {
     color: var(--text-black-900);
     font-weight: 700;
     padding: 15px 25px;
     font-size: 20px;
     letter-spacing: 5px;
 }
-.aside .logo a span{
+
+.aside .logo a span {
     font-family: 'Gloria Hallelujah', cursive;
     font-size: 40px;
 }
 
-.aside .nav-bar{
+.aside .nav-bar {
     margin-top: 20px;
 }
-.aside .nav-bar li{
+
+.aside .nav-bar li {
     margin-bottom: 20px;
     display: block;
 
 }
+
 .aside .nav-bar li a {
     font-size: 16px;
     font-weight: 600;
@@ -78,13 +86,16 @@ body{
     padding: 5px 15px;
 
 }
-.aside .nav-bar li a.active{
+
+.aside .nav-bar li a.active {
     color: var(--skin-color);
 }
-.aside .nav-bar li a i{
+
+.aside .nav-bar li a i {
     margin-right: 15px;
 }
-.aside .nav-bar-toggler{
+
+.aside .nav-bar-toggler {
     height: 40px;
     width: 45px;
     border: 1px solid var(--bg-black-50);
@@ -94,5 +105,34 @@ body{
     top: 20px;
     border-radius: 5px;
     background: var(--bg-black-100);
+    display: none;
+    align-items: center;
+    justify-content: center;
 }
+
+.aside .nav-bar-toggler span {
+    height: 2px;
+    width: 18px;
+    background: var(--skin-color);
+    position: relative;
+}
+.aside .nav-bar-toggler span::before{
+    content: "";
+    height: 2px;
+    width: 18px;
+    background: var(--skin-color);
+    position: absolute;
+    top: -6px;
+    left: 0;
+}
+.aside .nav-bar-toggler span::after{
+    content: "";
+    height: 2px;
+    width: 18px;
+    background: var(--skin-color);
+    position: absolute;
+    top: 6px;
+    left: 0;
+}
+
 /* Aside End */
